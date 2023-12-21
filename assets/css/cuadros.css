@@ -1,0 +1,39 @@
+:root {
+    --primary: #fa5fa2;
+    --secondary: #dfc4c6;
+    --light: #dbdbdb;
+    --dark:#000;
+    --diabled: #e7e7e7;
+    }
+
+body { 
+    font-family: 'preconnect';
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
+}
+
+.container {
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    color: var(--light);
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes example {
+    from {top: 0px;}
+    to {top: 200px; background-color: rgb(255, 0, 76);}
+  }
+
+  .titulo {
+    text-align: center;
+  }
